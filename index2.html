@@ -12,14 +12,26 @@
 <script>
 
     async function GetRecenetPost() {
+
+        console.log("befor the process");
          
         const responses = await fetch("https://jsonplaceholder.typicode.com/posts/1");
         const data=await responses.json();
+        console.log(data);
+        console.log("request has been proceesed");
+        document.getElementById.innerHTML=data.body;
 
 
 
     }
+
+    GetRecenetPost();
    
 </script>
         
+
+
+// one thing note id down whenever you push your code in to github you should check the path of your file that you are in the same reposirtory where you want to psu you code
+
 </html>
+
